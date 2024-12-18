@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#result{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 50px;
+   font-weight: 700;
+   justify-content: center;
+   margin-left: 160px;
+
+
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+<body>
+    <div id="result"></div>
+
+     <script>
+     setInterval(function(){
+     
+     let currentdate= new Date ();
+      let monthArr = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"]
+      let date = currentdate.getDate();
+      let month = monthArr[currentdate.getMonth()];
+      let year = currentdate.getFullYear();
+      let hour = currentdate.getHours();
+      let min = currentdate.getMinutes();
+      let sec = currentdate.getSeconds();
+
+   let fullTime=`${date} ${month} ${year} ${hour}: ${min}: ${sec}`;
+  document.getElementById("result").innerHTML=fullTime
+     }, 1000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
